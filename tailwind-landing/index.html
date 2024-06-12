@@ -26,6 +26,28 @@
           class="hidden p-3 pt-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
           >Get started</a
         >
+        <!-- Hamburger icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"> </span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden mt-10 py-8 space-y-6 self-end font-bold bg-white drop-shadow-md sm:w-auto sm:self-center left-6 right-6"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About us</a>
+          <a href="#">Career</a>
+          <a href="#">Community</a>
+        </div>
       </div>
     </nav>
     <main id="hero">
@@ -257,7 +279,7 @@
     <footer class="bg-veryDarkBlue">
       <!-- Flex container -->
       <div
-        class="container flex flex-col-reverse items-center justify-between px-6 py-10 mx-auto md:flex-row md:space-y-0"
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto md:flex-row md:space-y-0"
       >
         <!-- Logo & social links -->
         <div
@@ -310,7 +332,7 @@
           </div>
         </div>
         <!-- Lists -->
-        <div class="flex justify-around space-x-32">
+        <div class="flex justify-around space-x-12 md:space-x-32">
           <div class="flex flex-col space-y-3 text-white">
             <a href="#" class="hover:text-brightRed">Home</a>
             <a href="#" class="hover:text-brightRed">Pricing</a>
@@ -324,12 +346,13 @@
           </div>
         </div>
         <!-- Form and Btn -->
-        <div class="flex flex-col justify-between mb-6 md:mb-0">
+        <div class="flex flex-col justify-between px-5 mb-6 md:mb-0 md:px-0">
           <form>
             <div class="flex space-x-3">
               <input
                 type="text"
                 class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Update your info..."
               />
               <buttton
                 class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
@@ -343,5 +366,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
   </body>
 </html>
